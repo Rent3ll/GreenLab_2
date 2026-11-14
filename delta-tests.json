@@ -1,0 +1,20 @@
+[
+  {
+    "name": "D01: Влажность 37 (2.0 vs 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 37, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": true, "vent": false, "fault": false, "used": 2}
+      }
+    ]
+  },
+  {
+    "name": "D02: Влажность 39.9 (2.0 vs 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 39.9, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": true, "vent": false, "fault": false, "used": 2}
+      }
+    ]
+  }
+]
