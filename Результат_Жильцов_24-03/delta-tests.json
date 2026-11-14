@@ -1,0 +1,38 @@
+[
+  {
+    "name": "D01: Влажность 37 (2.0 vs 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 37, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": true, "vent": false, "fault": false, "used": 2}
+      }
+    ]
+  },
+  {
+    "name": "D02: Влажность 39.9 (2.0 vs 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 39.9, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": true, "vent": false, "fault": false, "used": 2}
+      }
+    ]
+  },
+  {
+    "name": "D03: Граница 40 (удержание в 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 40, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": false, "vent": false, "fault": false, "used": 0}
+      }
+    ]
+  },
+  {
+    "name": "D04: Граница 45 (выключение в 2.1)",
+    "steps": [
+      {
+        "input": {"humidity": 45, "temp": 20, "rain": false, "age": 0, "tank": 50, "budget": 5, "reset": false},
+        "expected": {"pump": false, "vent": false, "fault": false, "used": 0}
+      }
+    ]
+  }
+]
